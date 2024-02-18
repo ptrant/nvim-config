@@ -1,6 +1,11 @@
+vim.g.mapleader = " "
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+
+vim.keymap.set("n", "<leader>bp", vim.cmd.bprevious)
+vim.keymap.set("n", "<leader>bn", vim.cmd.bnext)
+vim.keymap.set("n", "<leader>bc", vim.cmd.bunload)
 
 -- move selected lines
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -17,8 +22,8 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
--- paste without losing yanked stuff
-vim.keymap.set("x", "<leader>p", "\"_dP")
+-- paste without losing yanked stuff - conflicts with all the other p-commands
+-- vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- System clipboard (asbjornHaland)
 vim.keymap.set("n", "<leader>y", "\"+y")

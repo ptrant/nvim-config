@@ -6,6 +6,9 @@
   ~/.local/share/nvim/site/pack/packer/start/packer.nvim
   ```
 
+## TODO
+- [] some kind of powerline font status line
+
 ## Source
 - based on the tutorial from ThePrimeagen at <https://youtu.be/5JGVtttuDQA>
 - his repo: <https://github.com/ThePrimeagen/init.lua>

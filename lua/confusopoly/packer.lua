@@ -22,7 +22,11 @@ return require('packer').startup(function(use)
 
 	use 'tanvirtin/monokai.nvim'
 	use 'folke/tokyonight.nvim'
+    use 'rafi/awesome-vim-colorschemes'
 
+    -- airline - maybe replace?
+    use 'vim-airline/vim-airline'
+    use 'vim-airline/vim-airline-themes'
 
 	-- treesitter
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
