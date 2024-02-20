@@ -29,11 +29,11 @@ return require('packer').startup(function(use)
     use 'vim-airline/vim-airline-themes'
 
 	-- treesitter
-	('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-	('nvim-treesitter/playground')
+	use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+	use ('nvim-treesitter/playground')
 
 	-- harpoon
-	('theprimeagen/harpoon')
+	use ('theprimeagen/harpoon')
 
 	-- undo tree
 	use('mbbill/undotree')
