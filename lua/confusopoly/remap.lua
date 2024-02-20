@@ -9,6 +9,8 @@ vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>bp", vim.cmd.bprevious)
 vim.keymap.set("n", "<leader>bn", vim.cmd.bnext)
 vim.keymap.set("n", "<leader>bc", vim.cmd.bunload)
+vim.keymap.set("n", "<leader><Tab>", vim.cmd.bnext)
+vim.keymap.set("n", "<leader><S-Tab>", vim.cmd.bprevious)
 
 -- move selected lines
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
