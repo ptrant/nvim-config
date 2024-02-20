@@ -29,17 +29,20 @@ return require('packer').startup(function(use)
     use 'vim-airline/vim-airline-themes'
 
 	-- treesitter
-	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-	use('nvim-treesitter/playground')
+	('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+	('nvim-treesitter/playground')
 
 	-- harpoon
-	use('theprimeagen/harpoon')
+	('theprimeagen/harpoon')
 
 	-- undo tree
 	use('mbbill/undotree')
 
 	-- vim-fugitive
 	use('tpope/vim-fugitive')
+
+    -- multi-cursor stuff
+    use('mg979/vim-visual-multi')
 
 	-- LSP (see github.com/ThePrimeagen/init.lua)
 	use {
