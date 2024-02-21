@@ -67,4 +67,7 @@ return require('packer').startup(function(use)
 		}
 	}
 
+    -- VimBeGood
+    use('ThePrimeagen/vim-be-good')
+
 end)
