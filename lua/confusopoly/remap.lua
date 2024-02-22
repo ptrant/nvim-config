@@ -46,16 +46,20 @@ vim.keymap.set("v", "<leader>d", "\"_d")
 -- should open a fuzzy find for selecting a new dir, but no idea how it's supposed to work
 -- vim.keymap.set("n", "<C-f>", "<cmd> !tmux neww tmux-sessionizer<CR>")
 
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+-- quickfix list:
+vim.keymap.set("n", "<M-k>", ":cprev<CR>zz")
+-- doesn't work: vim.keymap.set("n", "<S-F6>", ":cprev<CR>zz")
+vim.keymap.set("n", "<M-j>", ":cnext<CR>zz")
+vim.keymap.set("n", "<F6>", ":cnext<CR>zz")
 
-vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
-vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
+-- location list:
+vim.keymap.set("n", "<leader>j", ":lnext<CR>zz")
+vim.keymap.set("n", "<leader>k", ":lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- make the current file executable
-vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+vim.keymap.set("n", "<leader>x", ":!chmod +x %<CR>", { silent = true })
 
 -- Disable highlight when <leader><cr> is pressed
 -- map <silent> <leader><cr> :noh<cr>
